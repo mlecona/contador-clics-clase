@@ -1,12 +1,14 @@
 import React from 'react';
 import '../estilos/Contador.css'
 
-function Contador({ numClic }) {
-  return (
+class Contador extends React.Component {
+  render() {
+    return (
     <div className='contador'>
-        { numClic }
+        { this.props.numClic }
     </div>
   );
+  }
 }
 
 export default Contador;
